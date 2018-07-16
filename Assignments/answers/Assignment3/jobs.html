@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+<title> JavaJam Coffee House Jobs</title>
+<link rel="stylesheet" href="javajam.css"/>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>JavaJam Coffee House</h1>
+<span><b><img src="coffee_icon.jpg" width="20" height="20"/>Java House</b></span>
+</header>
+<nav>
+  <ul>
+    	<li class="main-menu-item"><a href="index.html">Home</a>
+	 <ul class ="submenu">
+		<li><a href="index.html">Hot Brews</a></li>
+		<li><a href="index.html">Cold Brews</a></li>
+	 </ul>
+	</li>
+    	<li><a href="menu.html">Menu</a></li>
+    	<li class="music"><a href="music.html">Music</a></li>
+    	<li><a href="jobs.html">Jobs</a></li>
+	<li><a href="ImageGallery\images.html">Gallery</a></li>
+  	<li class="feedback"><a href="feedback.html">Feedback</a></li>
+</ul>
+</nav>
+<main>
+<h2>Jobs at JavaJam</h2>
+<form action="#" method="post">
+<table style="overflow-x:auto;">
+<caption>Employment Application Form</caption>
+<thead></thead>
+<tbody>
+<tr>
+<td>
+<label for="firstname">First Name *</label><br/>
+<input type="text" name="firstname" maxlength="50" required/></td>
+</tr>
+<tr>
+<td>
+<label for="lastname">Last Name *</label><br/>
+<input type="text" name="lastname" maxlength="50" required/></td>
+</tr>
+
+<tr>
+<td >
+<label for="email">Email ID *</label><br/>
+<input type="email" name="email" required style="width:427px;"/></td>
+</tr>
+
+<tr>
+<td >
+<label for="position">Position you are applying for? *</label><br/>
+<select name="position" style="width:427px;">
+  <option value="Assistant Manager">Assistant Manager</option>
+  <option value="Supervisor">Supervisor</option>
+  <option value="Cashier">Cashier</option>
+</select></tr>
+
+<tr>
+<td >
+<label for="salary">Expected Salary($/hr)</label><br/>
+<input type="number" name="salary" min="10" max="20"/></td>
+</tr>
+<tr>
+<td>
+<label for="start_date">When can you start?</label><br/>
+<input type="date" name="start_date"/></td>
+</tr>
+
+<tr>
+<td>
+<label for="phone">Phone *</label><br/>
+<input type="text" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="234-897-9876" required/></td>
+</tr>
+<tr>
+<td>
+<label for="fax">Fax</label><br/>
+<input type="text" name="fax" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="234-897-9876" /></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<label for="relocate">Are you willing to relocate?</label><br/>
+<input type="radio" name="relocate" value="Yes">Yes
+<input type="radio" name="relocate" value="No">No
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</tbody>
+</table>
+
+</form>
+</main>
+<footer>
+<small><i>Copyright &copy 2016 JavaJam Coffee House</i></small><br/>
+	<small><i><a href="mailto:singh.she@husky.neu.edu">sheetal@singh.com</a></i></small>
+
+</footer>
+</div>
+</body>
+</html>

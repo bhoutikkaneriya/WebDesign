@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<title>Image Gallery</title>
+<style>
+#gallery{
+position:relative;
+float:left;
+}
+
+#gallery ul{
+width:250px;
+list-style-type:none;
+}
+
+#gallery li { display: inline; float: left; padding: 10px; }
+
+#gallery img { border-style: none; }
+
+#gallery a { text-decoration: none; color: #333; font-style: italic; }
+
+#gallery span { display: none; }
+
+#gallery a:hover span { display: block; position: absolute;
+         top: 10px; left: 300px; text-align: center; }
+
+#maps{
+float:right;
+}
+</style>
+</head>
+<body>
+<header>
+<h1 style="text-align:center">Additional Task</h1>
+</header>
+<nav></nav>
+<main>
+<div id="gallery">
+<h2 style="margin-left:80px;">Image gallery</h2>
+<ul>
+ <li><a href="photo1.jpg"><img src="photo1thumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="photo1.jpg" width="250" height="150"
+    alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
+</li>
+ <li><a href="photo2.jpg"><img src="photo2thumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="photo2.jpg" width="250" height="150"
+    alt="Beach 1"><br>Beach 1</span></a>
+</li>
+ <li><a href="photo3.jpg"><img src="photo3thumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="photo3.jpg" width="250" height="150"
+    alt="Beach 2"><br>Beach 2</span></a>
+</li>
+ <li><a href="photo4.jpg"><img src="photo4thumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="photo4.jpg" width="250" height="150"
+    alt="Beach 3"><br>Beach 3</span></a>
+</li>
+ <li><a href="greg.jpg"><img src="gregthumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="greg.jpg" width="250" height="150"
+    alt="Beach 3"><br>Greg</span></a>
+</li>
+ <li><a href="melanie.jpg"><img src="melaniethumb.jpg" width="100"
+     height="75" alt="Golden Gate Bridge">
+    <span><img src="melanie.jpg" width="250" height="150"
+    alt="Beach 3"><br>Melanie</span></a>
+</li>
+</ul>
+</div>
+<div id="maps">
+<h2>Image Maps</h2>
+<map name="beach" id="beach">
+  <area href="https://en.wikipedia.org/wiki/Melanie_Safka" shape="rect" coords="24, 188, 339, 283" alt="Door County Fishing">
+</map>
+<img src="melanie.jpg" usemap="#beach" alt="Door County“ width="416" height="350">
+</div>
+
+</main>
+<footer></footer>
+</body>
+</html>

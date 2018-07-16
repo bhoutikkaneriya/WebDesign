@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "sourceMap": true
+    },
+    "files": [
+          "hello.ts",
+        "factorial.ts",
+        "interface_example.ts"
+    ]
+}

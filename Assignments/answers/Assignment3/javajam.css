@@ -1,0 +1,327 @@
+body{
+background-image: url("javabackground.gif");
+color: #2E0000;
+display:block;
+}
+
+#wrapper{
+margin:auto;
+width:80%;
+background-color: #F5F5DC;
+/*min-width: 960px;
+max-width: 2048px;*/
+box-shadow: 6px 6px 3px #2E0000;
+}
+
+h1{
+height:100px;
+margin: 0;
+background-image:url("javalogo.gif");
+background-repeat: no-repeat;
+text-indent:-9999px;
+background-position:center;
+font-family: Georgia, "Times New Roman", serif;
+}
+
+dt{
+font-weight:bold;
+list-style-type:none;
+
+}
+
+nav a:link{
+color: #795240 !important;
+}
+nav a:visited{
+color:#A58366 !important;
+}
+
+nav a:hover{
+color: #F5F5DC !important;
+}
+
+nav a:active {color:#0000FF !important;} /* selected link */ 
+
+nav a{
+text-decoration:none;
+/*display:inline;*/
+margin-left:20px;
+
+}
+nav{
+text-align:center;
+background-color: #E6D6A9;
+padding:10px;
+font-weight:bold;
+list-style-type:none;
+}
+
+nav ul li{
+list-style-type:none;
+display:inline-block;
+position:relative;
+cursor:pointer;
+
+}
+
+.submenu{
+list-style-type:none;
+display:none;
+position:absolute;
+margin-left:0px;
+padding-left:0px;
+background-color:#E6D6A9;
+
+}
+
+.submenu li{
+padding-top:10px;
+min-width: 100px;
+border: 2px ridge #00005D;
+}
+
+.submenu li a{
+margin:0;
+color:white;
+
+}
+
+.submenu li a:hover{
+color:black;
+
+}
+.main-menu-item:hover > ul
+{
+display:block;
+}
+
+main{
+padding:20px;
+display:block;
+}
+
+h2{
+font-family: Georgia, "Times New Roman", serif;
+}
+
+header{
+background-color: #D2B48C;
+
+}
+
+h3{
+background-color: #E6D6A9;
+text-transform: uppercase;
+}
+
+/*ul { list-style-image: url(marker.gif);
+}*/  
+
+footer{
+font-size: .60em;
+font-style:italic;
+text-align:center;
+background-color: #D2B48C;
+color: #000000;
+padding:10px;
+}
+
+#hero{
+height:auto;
+color: #f5f5dc;
+background-image:url("heroroad.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#hero ul{
+list-style-image: url(marker.gif);
+    list-style-position: inside;
+}
+.news{
+margin-left:20%;
+margin-right:20%;
+}
+
+caption{
+color:brown;
+font-size:25px;
+}
+
+table{
+width:50%;
+margin-left:auto;
+margin-right:auto;
+}
+
+header span{
+display:none;
+}
+
+.feedback{
+display:none;
+}
+
+#mobile_content{
+display:none;
+}
+
+footer{
+font-size:15px;
+}
+
+ @media only screen and (max-width: 768px){
+nav, nav ul, nav li { padding: 0; margin-top:0px; }
+  nav ul li { display: block; }
+    nav ul li a { display: block; 
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D; }
+  h1{display:none;}
+  #wrapper{ width:auto;
+		height:auto;
+		box-shadow:none;}
+	
+.submenu li{display:none;}
+header span{display:block;}
+.music{display:none;}
+.feedback{display:block;}
+
+#main_content{
+display:none;}
+
+#mobile_content{
+color:black;
+display:block;
+}
+
+#phone{
+text-align:center;}
+
+#hero{
+background-image:none;
+height:auto;
+}
+
+#phone p a{
+color:#C2B7A4;
+}
+
+table{
+width:auto;
+}
+
+footer{
+font-size:18px!important;
+}	
+}
+
+
+@media only screen and (max-device-width : 365px) {
+nav, nav ul, nav li { padding: 0; margin-top:0px; }
+  nav ul li { display: block; }
+    nav ul li a { display: block; 
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D; }
+  h1{display:none;}
+  #wrapper{ width:auto;
+		height:auto;
+		box-shadow:none;}
+	
+.submenu li{display:none;}
+header span{display:block;}
+.music{display:none;}
+.feedback{display:block;}
+
+#main_content{
+display:none;}
+
+#mobile_content{
+color:black;
+display:block;
+}
+
+#phone{
+text-align:center;}
+
+#hero{
+background-image:none;
+height:auto;
+}
+
+#phone p a{
+color:#C2B7A4;
+}
+  
+nav{
+font-size:25px;
+}
+
+span{
+font-size:30px;}
+
+table{
+width:auto;
+}
+
+footer{
+font-size:14px!important;
+}
+}
+
+@media only screen and (max-device-width : 365px){
+nav, nav ul, nav li { padding: 0; margin-top:0px; }
+  nav ul li { display: block; }
+    nav ul li a { display: block; 
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D; }
+  h1{display:none;}
+  #wrapper{ width:auto;
+		height:auto;
+		box-shadow:none;}
+	
+.submenu li{display:none;}
+header span{display:block;}
+.music{display:none;}
+.feedback{display:block;}
+
+#main_content{
+display:none;}
+
+#mobile_content{
+color:black;
+display:block;
+}
+
+#phone{
+text-align:center;}
+
+#hero{
+background-image:none;
+height:auto;
+}
+
+#phone p a{
+color:#C2B7A4;
+}
+
+nav{
+font-size:18px;
+}  
+
+span{
+font-size:20px;}
+
+footer{
+font-size:14px!important;
+}
+
+table{
+width:auto;
+}
+}
+
+
+
+
+
+

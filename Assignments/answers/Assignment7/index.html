@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="shoppingList">
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>  
+       <script type="text/javascript" src = "shopping.js"></script> 
+ 
+<style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+
+</style>
+
+</head>
+   <body ng-controller="shoppingController">
+      <h1 style ="margin-bottom:0px;"> Shopping List</h1>
+ <form name = "myForm" novalidate>   
+<table border = "0">
+         <tr>
+            <th>Items</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+            <th>Total</th>
+         </tr>
+         <tr ng-repeat="item in items">
+            <td> <input type ="text" ng-model="item.name" ></td>
+            <td><input type ="number" ng-model ="item.quantity"></td>
+            <td><input type = "number" ng-model ="item.cost"></td>
+          
+            <td> {{item.quantity * item.cost| currency}}</td>
+             <td><a href ng-click = "removeItem($index)">X </a></td> 
+         </tr>
+	 <tr>
+            <td><a href ng-click="addItem()" class="btn btn-small">add item</a></td>
+            <td></td>
+            <td>Subtotal:</td>
+	    <td>{{calculateTotal()|currency}}</td>
+              </tr>
+
+	<tr>
+            <td></td>
+            <td>Tax</td>
+	    <td></td>
+            <td>{{taxAmount| currency}}</td>
+              </tr>
+	<tr>
+            <td></td>
+            <td>Enter Promo Code: </td>
+            <td><input type = "text" ng-model="code" placeholder = "DISCOUNT5"><a href ng-click = "applycode(code)">APPLY</a></td>
+	    <td></td>
+              </tr>
+		<tr>
+            <td></td>
+            <td>Promotioncode applied: </td>
+            <td><input type = "text" ng-model ="discount_value"></td>
+	    <td>{{discount | currency}}</td>
+              </tr>
+	    
+		<tr>
+            <td></td>
+            <td>ESTIMATED TOTAL </td>
+	    <td></td>
+            <td>{{finalAmount|currency}}</td>
+              </tr>
+		<tr></tr>
+<tr>
+            <td></td>
+            <td>Shipping Address </td>
+	    <td><textarea name ="billing_address" ng-model="billing_address" required></textarea> 
+			<span style="color:red" ng-show="myForm.billing_address.$invalid">Billing address is required.</span>
+			
+		</td>
+            <td></td>
+              </tr>
+
+<tr>
+            <td></td>
+            <td>Billing Address </td>
+	    <td><textarea name ="address" ng-model="address" required></textarea> 
+			<span style="color:red" ng-show="myForm.address.$invalid">Shipping address is required.</span>
+			
+			</td>
+            <td></td>
+              </tr>
+		<tr>
+            <td></td>
+            <td></td>
+	    <td><input type="submit" style="margin-left:150px;"
+	ng-disabled="myForm.address.$invalid || myForm.billing_address.$invalid "></td>
+            
+   <td></td>
+              </tr>
+      </table>
+  </form> 
+   </body>
+</html>

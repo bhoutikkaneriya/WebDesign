@@ -1,0 +1,43 @@
+body{
+font-family:Arial, Helvetica, sans-serif;
+color: #2E0000;
+}
+
+nav, dt{
+font-weight:bold;
+list-style-type:none;
+
+}
+
+nav a{
+text-decoration:none;
+display:inline;
+margin-right:20px;
+}
+
+h1,h2{
+font-family: Georgia, "Times New Roman", serif;
+}
+
+header{
+background-color: #D2B48C;
+
+}
+
+h3{
+background-color: #E6D6A9;
+text-transform: uppercase;
+}
+
+ul { list-style-image: url(marker.gif);
+}  
+
+footer{
+font-size: .60em;
+font-style:italic;
+text-align:center;
+background-color: #D2B48C;
+color: #000000;
+}
+
+

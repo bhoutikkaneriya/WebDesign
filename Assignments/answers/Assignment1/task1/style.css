@@ -1,0 +1,101 @@
+body{
+margin:0 auto;
+width:1500px;
+text-align:center;
+background-color: #2B201B;
+color:white;
+background-image: url("coffee_background.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size:100%;
+}
+
+.container{
+overflow:auto;
+text-align:justify;
+}
+
+
+.heading{
+font-size:50px;
+margin-bottom:0px;
+}
+
+.welcome{
+clear:left;
+}
+
+.welcome, .popular{
+float: left;
+width:33%;
+margin-left:20px;
+}
+
+#heading1, #heading2, #heading3{
+text-align:center;
+}
+
+li{
+display:inline;
+list-style-type:none;
+color:#CA9978;
+}
+
+.nav1 li
+{
+margin-left:80px;
+}
+
+.nav1 li a
+{
+color:#CA9978;
+font-size:25px;
+}
+
+img{
+border:4px solid white;
+float:left;
+}
+
+.coffee1{
+float:left;
+margin-bottom:10px;
+}
+
+.coffee2{
+clear: both;
+float: left;
+margin-bottom: 10px;
+}
+
+.coffee3{
+clear:both;
+float:left;
+}
+
+.coffee_image{
+float:left;
+width:25%;
+}
+
+.coffee_text{
+float:left;
+width:70%;
+margin-left: 13px;
+}
+
+footer{
+margin-top:40px;
+float:left;
+margin-left:20px;
+}
+
+footer li {
+margin-left:50px;
+color:#CA9978;
+}
+
+footer li a{
+color:#CA9978;
+}
+
